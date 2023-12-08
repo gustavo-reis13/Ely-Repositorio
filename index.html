@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#formulario {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUTO</title>
+</head>
+
+<body>
+    <input type="button" value="Novo" onclick="novo()">
+    <div id="formulario" style="display: none;">
+        <label for="">
+            nome: <input type="text" name="" id="nome">
+        </label> <br>
+        <label for="">
+            cor: <input type="text" name="" id="cor">
+        </label> <br>
+        <label for="">
+            qtd: <input type="text" name="" id="cor">
+        </label> <br>
+        <label for="">
+            preco: <input type="text" name="" id="cor">
+        </label> <br>
+        <label for="">
+            categoria: <input type="text" name="" id="cor">
+        </label> <br>
+
+        <input type="button" value="salvar" onclick="salvar()">
+        <input type="button" value="cancelar" onclick="cancelar()">
+    </div>
+
+    <div id="lista">
+        <table border = "1" width="100%">
+            <thead>
+                <th>nome</th>
+                <th>cor</th>
+                <th>qtd</th>
+                <th>preco</th>
+                <th>categoria</th>
+                <th></th>
+
+            </thead>
+            <tbody id="dados"></tbody>
+        </table>
+    </div>
+    <script src="../JAVASCRIPT/index.js"></script>
+</body>
+</html>
